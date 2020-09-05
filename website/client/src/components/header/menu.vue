@@ -298,6 +298,13 @@
             </router-link>
             <div class="topbar-dropdown">
               <router-link
+                v-if="user.contributor.admin"
+                class="topbar-dropdown-item dropdown-item"
+                :to="{name: 'adminPanel'}"
+              >
+                Admin Panel
+              </router-link>
+              <router-link
                 class="topbar-dropdown-item dropdown-item"
                 :to="{name: 'faq'}"
               >
