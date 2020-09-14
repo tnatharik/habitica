@@ -507,10 +507,6 @@
       border-radius: 2px;
       border: $purple-400 solid 1px;
     }
-
-    &:focus .task-notes:not(:empty) {
-      margin-bottom: -4px; // to counter extra height from notes and border
-    }
   }
 
   .task-title + .task-dropdown ::v-deep .dropdown-menu {
@@ -572,6 +568,7 @@
     .dropdown-item {
       cursor: pointer !important;
       transition: none;
+      border: transparent solid 1px;
 
       * {
         transition: none;
@@ -590,6 +587,7 @@
 
       &:focus {
         border-radius: 2px;
+        border: $purple-400 solid 1px;
       }
     }
   }
@@ -626,12 +624,8 @@
     }
   }
 
-  .checklist {
-    &.isOpen {
-      margin-bottom: 2px;
-    }
-
-    margin-top: -3px;
+  .checklist.isOpen {
+    margin-bottom: 2px;
   }
 
   .collapse-checklist {
