@@ -20,7 +20,7 @@ export const EVENTS = {
     gemsPromo,
   },
   fall2020:   {
-    start: '2020-09-22T08:00-04:00',
+    start: '2020-09-21T08:00-04:00',
     end: '2020-09-30T20:00-04:00',
     gemsPromo,
   },
