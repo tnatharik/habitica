@@ -1,7 +1,7 @@
 {
     "rebirthNew": "Phục Sinh: Một cuộc phiêu lưu mới đang chờ!",
     "rebirthUnlock": "Bạn đã mở khóa Phục Sinh! Vật phẩm đặc biệt này cho phép bạn bắt đầu game mới ở cấp độ 1 trong khi vẫn giữ lại cho bạn danh sách công việc, chiến tích , vật nuôi , và nhiều hơn nữa. Sử dụng nó để thở một cuộc sống mới vào Habitica nếu bạn cảm thấy bạn đã đạt được tất cả, hoặc để trải nghiệm các tính năng mới với cái nhìn mới mẻ của một nhân vật mới bắt đầu!",
-    "rebirthAchievement": "Bạn đã bắt đầu một cuộc phiêu lưu mới ! Đây là Rebirth <%= number %> cho bạn, và Cấp Độ cao nhất bạn đã đạt đến là <%= level%> . Để chồng Chiến Tích nà, bắt đầu cuộc phiêu lưu mới của bạn khi bạn đã đạt đến một Cấp Độ cao hơn nữa!",
+    "rebirthAchievement": "Bạn đã bắt đầu một cuộc phiêu lưu mới ! Đây là Rebirth <%= number %> cho bạn, và Cấp Độ cao nhất bạn đã đạt đến là <%= level %> . Để chồng Chiến Tích nà, bắt đầu cuộc phiêu lưu mới của bạn khi bạn đã đạt đến một Cấp Độ cao hơn nữa!",
     "rebirthAchievement100": "Bạn đã bắt đầu một cuộc phiêu lưu mới! Đây là Phục Sinh thứ <%= number %> cho bạn, và Cấp Độ cao nhất bạn đã đạt được là 100 hoặc cao hơn. Để tăng Chiến Tích này, bắt đầu cuộc phiêu lưu tiếp theo khi bạn đã đạt ít nhất cấp độ 100!",
     "rebirthBegan": "Bắt đầu một cuộc phiêu lưu mới",
     "rebirthText": "Bắt đầu <%= rebirths %> những cuộc phiêu lưu mới",
