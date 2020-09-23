@@ -3,7 +3,6 @@
     "earnedRewardForDevotion": "Bạn đã nhận được <%= reward %> cho nỗ lực trong việc cải thiện cuộc sống của mình.",
     "nextRewardUnlocksIn": "Số lần điểm danh trước phần thưởng kế tiếp: <%= numberOfCheckinsLeft %>",
     "awesome": "Tuyệt vời!",
-    "totalCount": "tổng số đếm là <%= count %>  lần",
     "countLeft": "Số lần điểm danh trước phần thưởng kế tiếp: <%= count %>",
     "incentivesDescription": "Khi nói đến việc tạo lập thói quen, sự kiên trì là chìa khóa mấu chốt. Mỗi ngày bạn điểm danh thì bạn sẽ đến gần hơn tới một phần thưởng.",
     "checkinEarned": "Số lần điểm danh của bạn đã tăng!",

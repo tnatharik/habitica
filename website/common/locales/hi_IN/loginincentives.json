@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "You have earned <%= reward %> for being committed to improving your life.",
   "nextRewardUnlocksIn": "चेक-इन्स आपके अगले इनाम के लिये: <%= numberOfCheckinsLeft %>",
   "awesome": "बहुत बढ़िया!",
-  "totalCount": "<%= count %> कुल गिनती",
   "countLeft": "चेक-इन्स अगले इनाम तक: <%= count %>",
   "incentivesDescription": "When it comes to building habits, consistency is key. Each day you check-in you get closer to a prize.",
   "checkinEarned": "आपका चेक-इन काउंटर बढ़ गया!",

@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "Ye'v earned <%= reward %> for being committit tae impruivin yer life.",
   "nextRewardUnlocksIn": "Chack-Ins until yer neist prize: <%= numberOfCheckinsLeft %",
   "awesome": "Brawsome!",
-  "totalCount": "<%= count %> tot coont",
   "countLeft": "Chack-ins until neist rewaird: <%= count %>",
   "incentivesDescription": "When it comes tae biggin habits, consistencey is key. Ilka day ye chack-in ye git close tae a prize.",
   "checkinEarned": "Yer Chack-In Coonter went up!",

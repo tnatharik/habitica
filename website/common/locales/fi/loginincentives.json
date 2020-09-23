@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "Olet saanut palkkion <%= reward %>, koska olet kehittänyt elämääsi uskollisesti.",
   "nextRewardUnlocksIn": "Sisäänkirjautumisia jäljellä ennen seuraavaa palkintoasi: <%= numberOfCheckinsLeft %>",
   "awesome": "Mahtavaa!",
-  "totalCount": "<%= count %> kokonaismäärä",
   "countLeft": "Sisäänkirjautumisia jäljellä ennen seuraavaa palkkiotasi: <%= count %>",
   "incentivesDescription": "Johdonmukaisuus on avainasemassa tapojen luomisessa. Jokainen päivä, jona kirjaudut sisään, vie sinut lähemmäksi seuraavaa palkintoa.",
   "checkinEarned": "Mittariisi kilahti taas uusi sisäänkirjautuminen!",

@@ -3,7 +3,6 @@
     "earnedRewardForDevotion": "Has rebut <%= reward %> per estar compromès a millorar la teva vida.",
     "nextRewardUnlocksIn": "Entrades fins el pròxim premi: <%= numberOfCheckinsLeft %>",
     "awesome": "Genial!",
-    "totalCount": "<%= count %> en total",
     "countLeft": "Entrades fins la pròxima recompensa: <%= count %>",
     "incentivesDescription": "Quan es tracta de formar hàbits, la consistència és la clau. Cada dia que entris estàs més a prop d'obtenir un premi.",
     "checkinEarned": "El teu comptador d'entrades ha augmentat!",

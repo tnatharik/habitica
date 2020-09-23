@@ -3,7 +3,6 @@
     "earnedRewardForDevotion": "Du har tjent <%= reward %> for å være engasjert med å forbedre livet ditt.",
     "nextRewardUnlocksIn": "Innlogginger til din neste premie: <%= numberOfCheckinsLeft %>",
     "awesome": "Fantastisk!",
-    "totalCount": "<%= count %> total antall",
     "countLeft": "Innlogginger til din neste belønning: <%= count %>",
     "incentivesDescription": "Når det gjelder å bygge vaner, regelmessighet er nøkkelen. Hver dag logger inn, så kommer du nærmere en premie.",
     "checkinEarned": "Ditt Innloggingsantall gikk opp",

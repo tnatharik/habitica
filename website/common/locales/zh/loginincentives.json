@@ -3,7 +3,6 @@
     "earnedRewardForDevotion": "因为努力地改善自己的生活，你赢得了一个<%= reward %>。",
     "nextRewardUnlocksIn": "继续签到直到获得下次战利品吧！剩余签到数：<%= numberOfCheckinsLeft %>",
     "awesome": "哟嚯！！",
-    "totalCount": "总共 <%= count %> 次",
     "countLeft": "继续签到直到获得下次战利品吧！剩余签到数：<%= count %>",
     "incentivesDescription": "养成习惯时，坚持是关键！每次签到都离你努力争取的东西更近一些。",
     "checkinEarned": "你的签到总次数又升高了！",

@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "Za predanost izboljšanju življenja ste si prislužili nagrado: <%= reward %>.",
   "nextRewardUnlocksIn": "Vpisov do naslednje nagrade: <%= numberOfCheckinsLeft %> ",
   "awesome": "Super!",
-  "totalCount": "<%= count %> skupaj",
   "countLeft": "Vpisov do naslednje nagrade: <%= count %> ",
   "incentivesDescription": "Doslednost je ključna za krepitev navad. Z vsakodnevnim vpisom boste bližje nagradi.",
   "checkinEarned": "Vaš števec vpisov je narastel!",

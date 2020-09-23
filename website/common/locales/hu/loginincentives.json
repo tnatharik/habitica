@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "Életed megváltoztatásáért kaptál egy <%= reward %>-t.",
   "nextRewardUnlocksIn": "A következő jutalomig ennyi bejelentkezés szükséges: <%= numberOfCheckinsLeft %>",
   "awesome": "Fantasztikus!",
-  "totalCount": "<%= count %> összesen",
   "countLeft": "Szükséges bejelentkezések száma a következő jutalomig: <%= count %>",
   "incentivesDescription": "Ha szokások építéséről van szó, állandóság a kulcsszó. Minden nap amikor bejelentkezel, közelebb kerülsz egy jutalomhoz.",
   "checkinEarned": "A bejelentkezéseid száma növekedett!",

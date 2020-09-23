@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "Už tai, kad pasiryžai pagerinti savo gyvenimą, gavai <%= reward %>.",
   "nextRewardUnlocksIn": "Prisijungimų iki kito prizo: <%= numberOfCheckinsLeft %>",
   "awesome": "Šaunu!",
-  "totalCount": "Bendra suma <%= count %>",
   "countLeft": "Prisijungimų iki kito apdovanojimo: <%= count %>",
   "incentivesDescription": "Įpročių lavinimui svarbiausia yra nuoseklumas ir pastovumas. Kiekvieną dieną prisijungęs (-usi), tu vis arčiau naujo apdovanojimo.",
   "checkinEarned": "Your Check-In Counter went up!",

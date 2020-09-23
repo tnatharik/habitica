@@ -3,7 +3,6 @@
   "earnedRewardForDevotion": "You have earned <%= reward %> for being committed to improving your life.",
   "nextRewardUnlocksIn": "Bilangan daftar masuk sebelum hadiah seterusnya: <%= numberOfCheckinsLeft %> ",
   "awesome": "Hebat!",
-  "totalCount": "<%= count %> Jumlah",
   "countLeft": "Bilangan daftar masuk sebelum ganjaran seterusnya: <%= count %>",
   "incentivesDescription": "Jika ia datang kepada membina habit, pengkonsistenan merupakan kunci. Setiap hari bilangan daftar masuk anda akan lebih dekat kepada ganjaran.",
   "checkinEarned": "Pengira Daftar masuk anda menaik!",
