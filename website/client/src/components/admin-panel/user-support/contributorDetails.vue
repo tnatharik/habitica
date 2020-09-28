@@ -27,20 +27,21 @@
             News poster (Bailey CMS)
           </label>
         </div>
-        <div class="form-group form-inline">
-          <label>Title</label>
-          <input
-            v-model="hero.contributor.text"
-            class="form-control"
-            type="text"
-            :style="{ 'min-width': '50ch' }"
-          >
+        <div class="form-group">
+          <div class="form-inline">
+            <label>Title</label>
+            <input
+              v-model="hero.contributor.text"
+              class="form-control"
+              type="text"
+              :style="{ 'min-width': '50ch' }"
+            >
+          </div>
           <small>
             Common titles:
             <strong>Ambassador, Artisan, Bard, Blacksmith, Challenger, Comrade, Fletcher,
               Linguist, Linguistic Scribe, Scribe, Socialite, Storyteller</strong>.
-          </small>
-          <small>
+            <br>
             Rare titles:
             Advisor, Chamberlain, Designer, Mathematician, Shirtster, Spokesperson,
             Statistician, Tinker, Transcriber, Troubadour.
@@ -70,6 +71,19 @@
           ></textarea>
           <div
             v-markdown="hero.contributor.contributions"
+            class="markdownPreview"
+          ></div>
+        </div>
+        <div class="form-group">
+          <label>Moderation Notes</label>
+          <textarea
+            v-model="hero.secret.text"
+            class="form-control"
+            cols="5"
+            rows="3"
+          ></textarea>
+          <div
+            v-markdown="hero.secret.text"
             class="markdownPreview"
           ></div>
         </div>
