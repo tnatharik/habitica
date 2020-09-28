@@ -325,10 +325,6 @@
 <style lang="scss">
   @import '~@/assets/scss/colors.scss';
 
-  .standard-page .clearfix .float-right {
-    margin-right: 24px;
-  }
-
   .inventory-item-container {
     padding: 20px;
     border: 1px solid;
@@ -351,6 +347,10 @@
 
     .standard-page {
       padding-right:0;
+    }
+
+    .standard-page .clearfix .float-right {
+      margin-right: 24px;
     }
 
     .svg-icon.inline.icon-16 {
