@@ -174,8 +174,8 @@
                 slot="itemBadge"
                 slot-scope="context"
               >
-                <starBadge
-                  :selected="context.item.key === currentPet"
+                <equip-badge
+                  :equipped="context.item.key === currentPet"
                   :show="isOwned('pet', context.item)"
                   @click="selectPet(context.item)"
                 />
@@ -233,8 +233,8 @@
               <template
                 slot="itemBadge"
               >
-                <starBadge
-                  :selected="item.key === currentMount"
+                <equip-badge
+                  :equipped="item.key === currentMount"
                   :show="isOwned('mount', item)"
                   @click="selectMount(item)"
                 />
@@ -327,6 +327,7 @@
 
 <style lang="scss">
   @import '~@/assets/scss/colors.scss';
+  @import '~@/assets/scss/mixins.scss';
 
   .inventory-item-container {
     padding: 20px;
@@ -446,7 +447,6 @@ import MountRaisedModal from './mountRaisedModal';
 import WelcomeModal from './welcomeModal';
 import HatchingModal from './hatchingModal';
 import toggleSwitch from '@/components/ui/toggleSwitch';
-import StarBadge from '@/components/ui/starBadge';
 import InventoryDrawer from '@/components/shared/inventoryDrawer';
 
 import ResizeDirective from '@/directives/resize.directive';
@@ -466,6 +466,7 @@ import { isOwned } from '../../../libs/createAnimal';
 import FilterSidebar from '@/components/ui/filterSidebar';
 import FilterGroup from '@/components/ui/filterGroup';
 import ShowMoreButton from '@/components/ui/showMoreButton';
+import EquipBadge from '@/components/ui/equipBadge';
 
 // TODO Normalize special pets and mounts
 // import Store from '@/store';
@@ -476,6 +477,7 @@ let lastMouseMoveEvent = {};
 
 export default {
   components: {
+    EquipBadge,
     ShowMoreButton,
     FilterGroup,
     FilterSidebar,
@@ -483,7 +485,6 @@ export default {
     FoodItem,
     MountItem,
     toggleSwitch,
-    StarBadge,
     HatchedPetDialog,
     MountRaisedModal,
     WelcomeModal,

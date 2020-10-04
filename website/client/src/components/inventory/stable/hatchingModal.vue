@@ -48,6 +48,7 @@
 <style lang="scss">
   @import '~@/assets/scss/colors.scss';
   @import '~@/assets/scss/mixins.scss';
+  @import '~@/assets/scss/colors.scss';
 
   #hatching-modal {
     @include centeredModal();
