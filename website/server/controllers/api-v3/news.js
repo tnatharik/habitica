@@ -3,12 +3,6 @@ import { model as NewsPost } from '../../models/newsPost';
 
 const api = {};
 
-<<<<<<< HEAD
-// @TODO export this const, cannot export it from here because only routes are exported from
-// controllers
-const LAST_ANNOUNCEMENT_TITLE = 'NEW SUBSCRIBER ITEMS! MONTHLY HABITICA CHALLENGES! BACK-TO-SCHOOL CHALLENGE AWARDED!';
-=======
->>>>>>> new-news
 const worldDmg = { // @TODO
   bailey: false,
 };
