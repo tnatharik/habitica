@@ -22,13 +22,19 @@
     border-color: $purple-400;
   }
 
-  &:active, &.active:not(.btn-flat), &:disabled, &.disabled {
+  &:active, &.active:not(.btn-flat) {
     box-shadow: none;
   }
 
   &:disabled, &.disabled {
     cursor: default;
     opacity: 0.75;
+  }
+
+  &.with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
