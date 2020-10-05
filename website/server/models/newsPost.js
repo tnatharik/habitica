@@ -6,12 +6,12 @@ const { Schema } = mongoose;
 const POSTS_PER_PAGE = 10;
 
 export const schema = new Schema({
-  title: { $type: String },
-  author: { $type: String },
-  credits: { $type: String },
-  publishDate: { $type: Date },
-  published: { $type: Boolean },
-  text: { $type: String },
+  title: { $type: String, required: true },
+  text: { $type: String, required: true },
+  credits: { $type: String, required: true },
+  author: { $type: String, ref: 'User', required: true },
+  publishDate: { $type: Date, required: true, default: Date.now },
+  published: { $type: Boolean, required: true, default: false },
 }, {
   strict: true,
   minimize: false, // So empty objects are returned
@@ -19,7 +19,7 @@ export const schema = new Schema({
 });
 
 schema.plugin(baseModel, {
-  noSet: ['_id'],
+  noSet: ['_id', 'author'],
   timestamps: true,
 });
 
@@ -42,12 +42,14 @@ schema.statics.getNews = async function getNews (isAdmin, options = { page: 0 })
   } else {
     query = this.find();
   }
+
   let page = 0;
   if (typeof options.page !== 'undefined') {
     page = options.page;
   }
 
-  return query.sort({ publishDate: -1 })
+  return query
+    .sort({ publishDate: -1 })
     .limit(POSTS_PER_PAGE)
     .skip(POSTS_PER_PAGE * Number(page))
     .exec();
