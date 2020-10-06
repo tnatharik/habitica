@@ -1,7 +1,5 @@
 <template>
-  <div
-    v-if="user.contributor.admin"
-  >
+  <div v-if="user.contributor.admin">
     <div
       v-if="hero && hero.profile"
       class="row"
@@ -20,9 +18,7 @@
         />
 
         <cron-and-auth
-          :auth="hero.auth"
-          :preferences="hero.preferences"
-          :last-cron="hero.lastCron"
+          :hero="hero"
           :reset-counter="resetCounter"
         />
 
@@ -56,32 +52,32 @@
   </div>
 </template>
 
-<style lang="scss">
-  .accordion-group .accordion-group {
+<style lang="scss" scoped>
+  ::v-deep .accordion-group .accordion-group {
     margin-left: 1em;
   }
-  h3 {
+  ::v-deep h3 {
     margin-top: 2em;
   }
-  h4 {
+  ::v-deep h4 {
     margin-top: 1em;
   }
-  .expand-toggle::after {
+  ::v-deep .expand-toggle::after {
     margin-left: 5px;
   }
-  .subsection-start {
+  ::v-deep .subsection-start {
     margin-top: 1em;
   }
-  .form-inline {
+  ::v-deep .form-inline {
     margin-bottom: 1em;
     input, span {
       margin-left: 5px;
     }
   }
-  .errorMessage {
+  ::v-deep .errorMessage {
     font-weight: bold;
   }
-  .markdownPreview {
+  ::v-deep .markdownPreview {
     margin-left: 3em;
     margin-top: 1em;
   }
@@ -125,7 +121,7 @@ export default {
   watch: {
     userIdentifier () {
       // close modal if the page is opened in an existing tab from the modal
-      this.$root.$emit('habitica::dismiss-modal', 'profile');
+      this.$root.$emit('bv::hide::modal', 'profile');
 
       this.loadHero(this.userIdentifier);
     },
@@ -155,11 +151,9 @@ export default {
       this.hasParty = false;
       this.partyNotExistError = false;
       if (this.hero.party && this.hero.party._id) {
-        let party;
         try {
-          party = await this.$store.dispatch('hall:getHeroParty', { groupId: this.hero.party._id });
+          this.party = await this.$store.dispatch('hall:getHeroParty', { groupId: this.hero.party._id });
           this.hasParty = true;
-          this.party = { ...party };
         } catch (e) {
           // the API's error message isn't worth reporting ("Request failed with status code 404")
           this.partyNotExistError = true;

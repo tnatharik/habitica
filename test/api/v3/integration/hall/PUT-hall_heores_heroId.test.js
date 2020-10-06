@@ -1,4 +1,5 @@
 import { v4 as generateUUID } from 'uuid';
+import { model as User } from '../../../../../website/server/models/user';
 import {
   generateUser,
   translate as t,
@@ -8,9 +9,8 @@ describe('PUT /heroes/:heroId', () => {
   let user;
 
   const heroFields = [
-    '_id', 'balance', 'profile', 'purchased',
-    'contributor', 'secret', 'auth', 'items', 'flags',
-    'preferences', 'lastCron', 'party',
+    '_id', 'auth', 'balance', 'contributor', 'flags', 'items', 'lastCron',
+    'party', 'preferences', 'profile', 'purchased', 'secret',
   ];
 
   before(async () => {
@@ -221,5 +221,36 @@ describe('PUT /heroes/:heroId', () => {
     // test hero values
     await hero.sync();
     expect(hero.items.special.snowball).to.equal(5);
+  });
+
+  it('does not accidentally update API Token', async () => {
+    // This test has been included because hall.js will contain code to produce
+    // a truncated version of the API Token, and we want to be sure that
+    // the real Token is not modified by bugs in that code.
+    const hero = await generateUser();
+    const originalToken = hero.apiToken;
+
+    // make any change to the user except the Token
+    await user.put(`/hall/heroes/${hero._id}`, {
+      contributor: { text: 'Astronaut' },
+    });
+
+    const updatedHero = await User.findById(hero._id).exec();
+    expect(updatedHero.apiToken).to.equal(originalToken);
+    expect(updatedHero.apiTokenObscured).to.not.exist;
+  });
+
+  it('does update API Token when admin changes it', async () => {
+    const hero = await generateUser();
+    const originalToken = hero.apiToken;
+
+    // change the user's API Token
+    await user.put(`/hall/heroes/${hero._id}`, {
+      changeApiToken: true,
+    });
+
+    const updatedHero = await User.findById(hero._id).exec();
+    expect(updatedHero.apiToken).to.not.equal(originalToken);
+    expect(updatedHero.apiTokenObscured).to.not.exist;
   });
 });
